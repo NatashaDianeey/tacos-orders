@@ -1,0 +1,170 @@
+/* Variables en Css siempre empiezan con --nombreColor:#000; */
+:root {
+    --primatyColor: #F08700;
+    --secondColor: #EFCA08;
+    --thirdColor: #ae0000;
+}
+
+@font-face {
+	font-family: 'OneloveFreeforPersonalUse';
+    src: url('fonts/original_Onelove_Free_Personal_Use.eot?#iefix') format('embedded-opentype'), 
+        url('fonts/original_Onelove_Free_Personal_Use.woff') format('woff'),
+        url('fonts/original_Onelove_Free_Personal_Use.ttf') format('truetype'),
+        url('fonts/original_Onelove_Free_Personal_Use.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    min-height: calc(100vh - 50px);
+    /* max-height: calc(100vh - 50px); */
+    /* margin-bottom: -50px; */
+}
+
+header {
+    width: 100%;
+    background-image: url('images/taco.jpg');
+    /* background-color: var(--secondColor); */
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+
+}
+
+header h1 {
+    font-family:'OneloveFreeforPersonalUse', Sans-Serif;
+    font-size: 7vw;
+    line-height: 10vw;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-top: 70px;
+    text-shadow: 0 0 21px #000;
+}
+
+header h1 span {
+    display: block;
+    font-size: 5vw;
+    line-height: 8vw;
+}
+
+.pedidos {
+    display: inline-block;
+    width: 70%;
+    background-color: whitesmoke;
+    min-height: calc(100vh - 150px);
+    vertical-align: top;
+}
+
+.pedidos section {
+    /* width: 60%; */
+    width: auto;
+    min-height: calc(100vh - 150px);
+    /* background-color: var(--thirdColor);
+    color: #fff; */
+    padding: 20px;
+    
+}
+
+
+aside {
+    display: inline-block;
+    width: 30%;
+    background-color: #C56F00;
+    /* height: calc(100vh - 150px); */
+    vertical-align: top;
+    /* overflow-y: scroll; */
+}
+
+aside section {
+    margin: 20px;
+    min-height: 50px;
+    background-color: #D4CB92;
+}
+
+.form-group {
+    display: block;
+}
+
+.form-group label {
+    width: 20%;
+    display: inline-block;
+    margin: 10px;
+}
+
+.form-group input,
+.form-group select {
+    border-radius: 11px;
+    border: 0;
+    padding: 5px;
+    width: 200px;
+}
+
+.form-group input[type='checkbox'],
+.form-group input[type='radio'] {
+    width: auto;
+}
+
+
+section.algo {
+    display: block;
+    /* min-height: 50px; */
+    background-color: #339409;
+}
+
+.taco-orden {
+    width: calc(100% / 3);
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.taco-orden img {
+    width: 100%;
+    height: auto;
+}
+
+.background__parallax {
+    width: 100%;
+    background-image: url('images/tacos.JPG');
+    height: 30vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    width: 100%;
+    background-color: #1e1e20;
+    min-height: 50px;
+}
+/* 
+input::placeholder {
+    color: gray;
+    font-size: 18px;
+}
+
+input {
+    color: blue;
+} */
+
+#confirm {
+    display: none;
+}
